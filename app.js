@@ -72,9 +72,7 @@ function handleEdit(e) {
 
 function handleUpdate() {
   let getId = localStorage.getItem("id");
-
   let getLocalData = getUserData();
-
   let getLocalObj = getLocalData.find((user) => user.Id === getId);
 
   if (getLocalObj) {
