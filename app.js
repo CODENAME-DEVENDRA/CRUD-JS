@@ -98,9 +98,7 @@ update.addEventListener("click", handleUpdate);
 
 function handleDelete(e) {
   let getId = e.getAttribute("data-id");
-
   let getLocalData = getUserData();
-
   let modifiedData = getLocalData.filter((user) => user.Id !== getId);
 
   localStorage.setItem("user", JSON.stringify(modifiedData));
