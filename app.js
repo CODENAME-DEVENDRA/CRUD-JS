@@ -83,7 +83,6 @@ function handleUpdate() {
     getLocalObj.Email = email.value;
     getLocalObj.Contact = contact.value;
   }
-
   localStorage.setItem("user", JSON.stringify(getLocalData));
 
   form.reset();
